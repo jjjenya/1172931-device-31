@@ -12,11 +12,11 @@
 
 <body class="page__body">
   <header class="page-header">
-    <nav class="main-nav nav-basic nav-user">
+    <nav class="main-nav index-nav">
       <a class="page-header__logo">
         <img src="https://via.placeholder.com/163x35" width="163" height="35" alt="Логотип интернет-магазина «Девайс»">
       </a>
-      <ul class="nav-user__list">
+      <ul class="nav-user">
         <li class="nav-user__item">
           <form class="nav-user__search">
             <input type="search" name="q" placeholder="Поиск по сайту">
@@ -32,7 +32,7 @@
           <a href="#">Корзина</a>
         </li>
       </ul>
-      <ul class="nav-basic__list nav-catalog">
+      <ul class="nav-basic nav-catalog">
         <li class="nav-basic__item">
           <a class="nav-catalog__link" href="catalog.html">Каталог товаров</a>
           <button class="nav-basic__toggle" type="button">
@@ -75,71 +75,87 @@
   <main>
     <h1 class="visually-hidden">интернет-магазин "Девайс" — для истинных ценителей гаджетов</h1>
 
-    <section class="slider">
-      <h2 class="visually-hidden">Рекламный слайдер</h2>
-      <ul class="slider__list">
-        <li class="slider__item">
-          <p class="slider__number">01</p>
-          <h3 class="slider__title">Делай селфи, как Бен Стиллер!</h3>
-          <p class="slider__text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров
-            длиной и весом всего 5 килограмм.</p>
-          <img class="slider__image" src="https://via.placeholder.com/384x486" width="384" height="486"
-            alt="Палка для селфи: черная треножка с ремешком для ладони">
-          <button class="slider__button" type="button">Подробнее</button>
-          <table class="feature">
-            <tr class="feature__value">
-              <td>8,5 м</td>
-              <td>5 кг</td>
-              <td>Карбон</td>
-            </tr>
-            <tr class="feature__index">
-              <td>Длина палки</td>
-              <td>Вес палки</td>
-              <td>Материал</td>
-            </tr>
-          </table>
-        </li>
-        <li class="slider__item">
-          <p class="slider__number">02</p>
-          <h3 class="slider__title">Худеем правильно!</h3>
-          <p class="slider__text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и
-            соблюдать диету.</p>
-          <img class="slider__image" src="https://via.placeholder.com/345x485" width="345" height="485"
-            alt="Фитнес браслет с черным ремешком и с надписью на экране: «Я вижу, что ты снова ешь :(»">
-          <button class="slider__button" type="button">Подробнее</button>
-          <table class="feature">
-            <tr class="feature__value">
-              <td>48 часов</td>
-            </tr>
-            <tr class="feature__index">
-              <td>Без подзарядки</td>
-            </tr>
-          </table>
-        </li>
-        <li class="slider__item">
-          <p class="slider__number">03</p>
-          <h3 class="slider__title">Порхает как бабочка,<br>жалит как пчела</h3>
-          <p class="slider__text"> Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным
-            под стандартную камеру. </p>
-          <img class="slider__image" src="https://via.placeholder.com/526x334" width="526" height="334"
-            alt="Квадрокоптер с белым корпусом и лазером">
-          <button class="slider__button" type="button">Подробнее</button>
-          <table class="feature">
-            <tr class="feature__value">
-              <td>800 м</td>
-              <td>50 м</td>
-            </tr>
-            <tr class="feature__index">
-              <td>Дальность полета</td>
-              <td>Радиус поражения</td>
-            </tr>
-          </table>
-        </li>
-      </ul>
-      <div class="slider__toggle">
-        <input type="radio" id="button-1" name="toggle">
-        <input type="radio" id="button-2" name="toggle">
-        <input type="radio" id="button-3" name="toggle" checked>
+
+    <section class="sliders-promo">
+      <h2 class="sliders-promo__title visually-hidden">Предлагаемые услуги сервиса</h2>
+
+      <div class="sliders-promo__sliders slide">
+        <input class="slide__selfie radio" type="radio" name="toggle" id="selfie" checked>
+        <input class="slide__watch radio" type="radio" name="toggle" id="watch">
+        <input class="slide__quadcopter radio" type="radio" name="toggle" id="quadcopter">
+
+        <div class="sliders-promo__controls">
+          <label class="sliders-promo-label" for="selfie">
+          </label>
+          <label class="sliders-promo-label" for="watch">
+          </label>
+          <label class="sliders-promo-label" for="quadcopter">
+          </label>
+        </div>
+
+        <div class="sliders-promo__wapper">
+          <ul class="sliders-promo-list">
+            <li class="slider-promo selfie">
+              <img class="slider-promo__image" src="https://via.placeholder.com/384x486" width="384" height="486"
+                alt="Палка для селфи: черная треножка с ремешком для ладони">
+              <p class="slider-promo__number">01</p>
+              <h3 class="slider-promo__title">Делай селфи, как Бен Стиллер!</h3>
+              <p class="slider-promo__text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь,
+                Карл!) метров
+                длиной и весом всего 5 килограмм.</p>
+              <button class="slider-promo__button" type="button">Подробнее</button>
+              <table class="slider-promo__feature feature">
+                <tr class="feature__value">
+                  <td>8,5 м</td>
+                  <td>5 кг</td>
+                  <td>Карбон</td>
+                </tr>
+                <tr class="feature__index">
+                  <td>Длина палки</td>
+                  <td>Вес палки</td>
+                  <td>Материал</td>
+                </tr>
+              </table>
+            </li>
+            <li class="slider-promo watch">
+              <img class="slider-promo__image" src="https://via.placeholder.com/345x485" width="345" height="485"
+                alt="Фитнес браслет с черным ремешком и с надписью на экране: «Я вижу, что ты снова ешь :(»">
+              <p class="slider-promo__number">02</p>
+              <h3 class="slider-promo__title">Худеем правильно!</h3>
+              <p class="slider-promo__text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия
+                и
+                соблюдать диету.</p>
+              <button class="slider-promo__button" type="button">Подробнее</button>
+              <table class="feature">
+                <tr class="feature__value">
+                  <td>48 часов</td>
+                </tr>
+                <tr class="feature__index">
+                  <td>Без подзарядки</td>
+                </tr>
+              </table>
+            </li>
+            <li class="slider-promo quadcopter">
+              <img class="slider-promo__image" src="https://via.placeholder.com/526x334" width="526" height="334"
+                alt="Квадрокоптер с белым корпусом и лазером">
+              <p class="slider-promo__number">03</p>
+              <h3 class="slider-promo__title">Порхает как бабочка,<br>жалит как пчела</h3>
+              <p class="slider-promo__text"> Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
+                замаскированным под стандартную камеру. </p>
+              <button class="slider-promo__button" type="button">Подробнее</button>
+              <table class="feature">
+                <tr class="feature__value">
+                  <td>800 м</td>
+                  <td>50 м</td>
+                </tr>
+                <tr class="feature__index">
+                  <td>Дальность полета</td>
+                  <td>Радиус поражения</td>
+                </tr>
+              </table>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
 
@@ -176,32 +192,45 @@
       </ul>
     </section>
 
-    <section class="services">
+    <section class="services slider">
       <h2 class="services__title visually-hidden">Предлагаемые услуги сервиса</h2>
-      <nav class="services-nav">
-        <ul class="services-nav__list">
-          <li class="services-nav__item">Доставка</li>
-          <li class="services-nav__item">Гарантия</li>
-          <li class="services-nav__item">Кредит</li>
-        </ul>
-      </nav>
-      <ul class="services__list">
-        <li class="services__item">
-          <h3 class="delivery" id="delivery">Доставка</h3>
+
+      <div class="slider__navigation">
+        <label class="slider__label" for="delivery">
+          <span>Доставка</span>
+        </label>
+        <label class="slider__label" for="guarantee">
+          <span>Гарантия</span>
+        </label>
+        <label class="slider__label" for="credit">
+          <span>Кредит</span>
+        </label>
+      </div>
+
+      <div class="sliders ">
+        <input class="delivery switch" type="radio" name="slide-switch" id="delivery" checked>
+        <input class="guarantee switch" type="radio" name="slide-switch" id="guarantee">
+        <input class="credit switch" type="radio" name="slide-switch" id="credit">
+
+        <div class="slider__wapper-text slider__text">
+          <h3 class="slider__title">Доставка</h3>
           <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
             заработаем, поднимая его на ваш этаж.</p>
-        </li>
-        <li class="services__item">
-          <h3 class="guarantee" id="guarantee">Гарантия</h3>
+          <svg></svg>
+        </div>
+        <div class="slider__wapper-text">
+          <h3 class="slider__title">Гарантия</h3>
           <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
             Товар, не дом, конечно же.</p>
-        </li>
-        <li class="services__item">
-          <h3 class="credit">Кредит</h3>
+          <svg></svg>
+        </div>
+        <div class="slider__wapper-text">
+          <h3 class="slider__title">Кредит</h3>
           <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия
             кредита. Выгодные для нашего банка, разумеется.</p>
-        </li>
-      </ul>
+          <svg></svg>
+        </div>
+      </div>
     </section>
 
     <section class="logotypes">
@@ -311,17 +340,17 @@
 
   <form class="form" action="#" method="post">
     <h2 class="form__title visually-hidden">Форма обратной связи</h2>
-    <label for="user-id">
+    <label class="form__username" for="user-id">
       Ваше имя:
-      <input class="form__name" name="username" id="user-id" type="text" placeholder="Имя Фамилия" required>
+      <input name="username" id="user-id" type="text" placeholder="Имя Фамилия" required>
     </label>
-    <label for="user-email">
+    <label class="form__email" for="user-email">
       Ваш e-mail:
-      <input class="form__email" name="email" id="user-email" type="email" placeholder="email@example.com" required>
+      <input name="email" id="user-email" type="email" placeholder="email@example.com" required>
     </label>
-    <label for="user-text">
+    <label class="form__text" for="user-text">
       Текст письма:
-      <input class="form__text" name="text" id="user-text" type="text" placeholder="В свободной форме" required>
+      <input name="text" id="user-text" type="text" placeholder="В свободной форме" required>
     </label>
     <button class="form__button" type="submit">Отправить</button>
     <button class="form__button-cloze" type="button" aria-label="Закрыть окно формы связи"></button>

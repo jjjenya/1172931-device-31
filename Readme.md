@@ -5,6 +5,13 @@
 
 ---
 
+https://www.figma.com/file/9GT9pAhlq1i6hSPY6Lo6V1/HTML-1-%2F-%D0%94%D0%B5%D0%B2%D0%B0%D0%B9%D1%81-(Copy)
+
+---
+
+
+---
+
 _Не удаляйте и не обращайте внимание на файлы:_<br>
 _`.editorconfig`, `.gitattributes`, `.gitignore`, `Contributing.md`, `Readme.md`._
 
