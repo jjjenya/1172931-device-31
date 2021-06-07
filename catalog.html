@@ -16,10 +16,10 @@
 
 <body class="page__body">
   <header class="page-header">
+    <a class="page-header__logo" href="index.html">
+      <img src="img/svg/logo-black.svg" width="163" height="35" alt="Логотип интернет-магазина «Девайс»">
+    </a>
     <nav class="main-nav catalog-nav">
-      <a class="page-header__logo" href="index.html">
-        <img src="img/svg/logo-black.svg" width="163" height="35" alt="Логотип интернет-магазина «Девайс»">
-      </a>
       <ul class="nav-user">
         <li class="nav-user__item">
           <form class="nav-user__search">
@@ -41,7 +41,7 @@
       </ul>
       <ul class="nav-basic nav-catalog">
         <li class="nav-basic__item">
-          <a class="nav-catalog__link" href="catalog.html">Каталог товаров</a>
+          <a class="nav-catalog__link" href="#">Каталог товаров</a>
           <button class="nav-basic__toggle" type="button">
             <span class="visually-hidden">Открыть разделы каталога</span>
           </button>
@@ -98,9 +98,9 @@
       </nav>
     </section>
 
-    <section class="filter">
-      <h3 class="filter-section">Фильтр</h3>
-      <form class="filter__list" action="#">
+    <section class="selection selection--filter">
+      <h3 class="selection__title">Фильтр</h3>
+      <form class="selection__list" action="#">
 
         <fieldset class="price">
           <legend class="price__show filter-section-title">Cтоимость </legend>
@@ -160,13 +160,13 @@
           </label>
         </fieldset>
 
-        <button class="filter__button" type="submit">Показать</button>
+        <button class="filter__button element-interactive" type="submit">Показать</button>
 
       </form>
     </section>
 
-    <section class="sort">
-      <h3 class="sort__title">Сортировка</h3>
+    <section class="selection selection--sort">
+      <h3 class="selection__title">Сортировка</h3>
       <ul class="sort-class">
         <li class="sort-class__item"><a href="#">По цене</a></li>
         <li class="sort-class__item"><a href="#">по типу</a></li>
@@ -186,7 +186,8 @@
           <li class="gallery__item">
             <article class="product">
               <div class="product-wrapper">
-                <img src="img/products/product-1.jpg" width="360" height="381" alt="черная селфи-палка в вертикальном положении с закрепленным на ней телефоном белого цвета (на экране: две девушки в солцезащитных очках)">
+                <img src="img/products/product-1.jpg" width="360" height="381"
+                  alt="черная селфи-палка в вертикальном положении с закрепленным на ней телефоном белого цвета (на экране: две девушки в солцезащитных очках)">
                 <h3 class="product__title">
                   Любительская селфи-палка
                 </h3>
@@ -201,7 +202,8 @@
             </article>
             <article class="product">
               <div class="product-wrapper">
-                <img src="img/products/product-2.jpg" width="360" height="381" alt="черная селфи-палка в вертикальном сложенном положении">
+                <img src="img/products/product-2.jpg" width="360" height="381"
+                  alt="черная селфи-палка в вертикальном сложенном положении">
                 <h3 class="product__title">
                   Профессиональная селфи-палка
                 </h3>
@@ -210,13 +212,14 @@
                 </p>
               </div>
               <div class="product-over">
-                <button type="button">В корзину</button>
-                <button type="button">Добавить к сравнению</button>
+                <button class="element-interactive" type="button">В корзину</button>
+                <button class="comparison" type="button">Добавить к сравнению</button>
               </div>
             </article>
             <article class="product">
               <div class="product-wrapper">
-                <img src="img/products/product-3.jpg" width="360" height="381" alt="селфи-палка с короткой ручкой в жёлто-черных цветах и с ремешком для запястья: вертикальное положение">
+                <img src="img/products/product-3.jpg" width="360" height="381"
+                  alt="селфи-палка с короткой ручкой в жёлто-черных цветах и с ремешком для запястья: вертикальное положение">
                 <h3 class="product__title">
                   Непотопляемая селфи-палка
                 </h3>
@@ -231,7 +234,8 @@
             </article>
             <article class="product">
               <div class="product-wrapper">
-                <img src="img/products/product-4.jpg" width="360" height="381" alt="селфи-палка: крепление черного цвета, ручка выполнена в виде руки (до плечевой кости) в черном рукаве с вытянутой ладонью: горизонтальное положение">
+                <img src="img/products/product-4.jpg" width="360" height="381"
+                  alt="селфи-палка: крепление черного цвета, ручка выполнена в виде руки (до плечевой кости) в черном рукаве с вытянутой ладонью: горизонтальное положение">
                 <h3 class="product__title">
                   Селфи-палка "Следуй за мной"
                 </h3>
@@ -239,9 +243,12 @@
                   1 900 руб.
                 </p>
               </div>
-              <div class="product-over">
+              <div class="product--over">
                 <button type="button">В корзину</button>
                 <button type="button">Добавить к сравнению</button>
+              </div>
+              <div class="prodact--new">
+                <span class="new-text">new</span>
               </div>
             </article>
           </li>
@@ -252,33 +259,36 @@
         <input class="gallery__second-page radio" type="radio" name="toggle" id="second">
         <input class="gallery__third-page radio" type="radio" name="toggle" id="third">
       </div>
-      <div class="gallery-link">
-        <a class="gallery-link__back" href="#" aria-label="Посмотреть предыдущую страницу каталога товаров">
-          <span>Назад</span>
-        </a>
-        <a class="gallery-link__forward" href="#" aria-label="Посмотреть следующую страницу каталога товаров">
-          <span>Вперед</span>
-        </a>
+      <div class="gallery-navigation">
+        <div class="gallery-link">
+          <a class="gallery-link__back" href="#" aria-label="Посмотреть предыдущую страницу каталога товаров">
+            <span>Назад</span>
+          </a>
+          <a class="gallery-link__forward" href="#" aria-label="Посмотреть следующую страницу каталога товаров">
+            <span>Вперед</span>
+          </a>
+        </div>
+
+        <div class="gallery-controls">
+          <label class="gallery-controls__label" for="first">
+            <span>1</span>
+          </label>
+          <label class="gallery-controls__label" for="second">
+            <span>2</span>
+          </label>
+          <label class="gallery-controls__label" for="third">
+            <span>3</span>
+          </label>
+        </div>
       </div>
 
-      <div class="gallery-controls">
-        <label class="gallery-controls__label" for="first">
-          <span>1</span>
-        </label>
-        <label class="gallery-controls__label" for="second">
-          <span>2</span>
-        </label>
-        <label class="gallery-controls__label" for="third">
-          <span>3</span>
-        </label>
-      </div>
     </section>
   </main>
 
 
   <footer class="footer">
     <nav class="footer-nav">
-      <a class="footer__logo" href="index.html">
+      <a class="footer__logo">
         <img src="img/svg/logo-yellow.svg" width="163" height="35" alt="Логотип интернет-магазина «Девайс»">
       </a>
       <ul class="footer-nav-user">
@@ -308,7 +318,7 @@
           <a href="#contacts">Контакты</a>
         </li>
         <li class="footer-nav-basic__item">
-          <a href="tel:+78005558628">Тел.: +7 800 555-86-28</a>
+          <a class="footer__tel" href="tel:+78005558628">Тел.: +7 800 555-86-28</a>
         </li>
       </ul>
     </nav>

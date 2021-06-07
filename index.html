@@ -16,61 +16,64 @@
 
 <body class="page__body">
   <header class="page-header">
+    <a class="page-header__logo">
+      <img src="img/svg/logo-black.svg" width="163" height="35" alt="Логотип интернет-магазина «Девайс»">
+    </a>
     <nav class="main-nav main-nav--index">
-      <a class="page-header__logo">
-        <img src="img/svg/logo-black.svg" width="163" height="35" alt="Логотип интернет-магазина «Девайс»">
-      </a>
       <ul class="nav-user">
         <li class="nav-user__item">
           <form class="nav-user__search">
-            <input type="search" name="q" placeholder="Поиск по сайту">
+            <p>
+              <input class="nav-user__search-text" type="search" name="q" placeholder="Поиск по сайту">
+              <button class="nav-user__search-button" type="submit">Найти</button>
+            </p>
           </form>
         </li>
         <li class="nav-user__item">
-          <a href="#">Войти</a>
+          <a class="nav-user__link" href="#">Войти</a>
         </li>
         <li class="nav-user__item">
-          <a href="#">Сравнить</a>
+          <a class="nav-user__link"href="#">Сравнить</a>
         </li>
         <li class="nav-user__item">
-          <a href="#">Корзина</a>
+          <a class="nav-user__link" href="#">Корзина</a>
         </li>
       </ul>
       <ul class="nav-basic nav-catalog">
         <li class="nav-basic__item">
-          <a class="nav-catalog__link" href="catalog.html">Каталог товаров</a>
+          <a class="nav-basic__link" href="catalog.html">Каталог товаров</a>
           <button class="nav-basic__toggle" type="button">
             <span class="visually-hidden">Открыть разделы каталога</span>
           </button>
           <ul class="nav-catalog__list">
             <li class="nav-catalog__item">
-              <a href="#">Виртуальная реальность</a>
+              <a class="nav-catalog__link" href="#">Виртуальная реальность</a>
             </li>
             <li class="nav-catalog__item">
-              <a href="#">Фитнес-браслеты</a>
+              <a class="nav-catalog__link" href="#">Фитнес-браслеты</a>
             </li>
             <li class="nav-catalog__item">
-              <a href="#">Квадрокоптер</a>
+              <a class="nav-catalog__link" href="#">Квадрокоптер</a>
             </li>
             <li class="nav-catalog__item">
-              <a href="#">Моноподы для селфи</a>
+              <a class="nav-catalog__link" href="#">Моноподы для селфи</a>
             </li>
             <li class="nav-catalog__item">
-              <a href="#">Умные часы</a>
+              <a class="nav-catalog__link" href="#">Умные часы</a>
             </li>
             <li class="nav-catalog__item">
-              <a href="#">Экшн-камеры</a>
+              <a class="nav-catalog__link" href="#">Экшн-камеры</a>
             </li>
           </ul>
         </li>
         <li class="nav-basic__item">
-          <a href="#delivery">Доставка</a>
+          <a class="nav-basic__link" href="#delivery">Доставка</a>
         </li>
         <li class="nav-basic__item">
-          <a href="#guarantee">Гарантия</a>
+          <a class="nav-basic__link" href="#guarantee">Гарантия</a>
         </li>
         <li class="nav-basic__item">
-          <a href="#contacts">Контакты</a>
+          <a class="nav-basic__link" href="#contacts">Контакты</a>
         </li>
       </ul>
     </nav>
@@ -107,7 +110,7 @@
               <p class="slider-promo__text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь,
                 Карл!) метров
                 длиной и весом всего 5 килограмм.</p>
-              <button class="slider-promo__button" type="button">Подробнее</button>
+              <button class="slider-promo__button element-interactive" type="button">Подробнее</button>
               <table class="slider-promo__feature feature">
                 <tr class="feature__value">
                   <td>8,5 м</td>
@@ -163,34 +166,37 @@
       </div>
     </section>
 
-    <section class="catalog">
+    <section class="popular">
       <h2 class="visually-hidden">Каталог товаров</h2>
-      <ul class="catalog__list">
-        <li class="catalog__item">
-          <img src="img/svg/index-catalog/popular-1.svg" width="160" height="160" alt="черный значок - очки виртульной реальности">
+      <ul class="popular__list">
+        <li class="popular__item">
+          <img src="img/svg/popular/popular-1.svg" width="97" height="55"
+            alt="черный значок - очки виртульной реальности">
           Виртуальная реальность
         </li>
-        <li class="catalog__item">
-          <img src="img/svg/index-catalog/popular-2.svg" width="160" height="160"
+        <li class="popular__item">
+          <img class="popular__image" src="img/svg/popular/popular-2.svg" width="86" height="117"
             alt="черный значок - монопод с телефоном, закрепленным горизонтально">
           Моноподы для селфи
         </li>
-        <li class="catalog__item">
-          <img src="img/svg/index-catalog/popular-3.svg" width="160" height="160" alt="черный значок - квадратная камера с объективом">
+        <li class="popular__item">
+          <img class="popular__image" src="img/svg/popular/popular-3.svg" width="71" height="87"
+            alt="черный значок - квадратная камера с объективом">
           Экшн-камеры
         </li>
-        <li class="catalog__item">
-          <img src="img/svg/index-catalog/popular-4.svg" width="160" height="160"
+        <li class="popular__item">
+          <img class="popular__image" src="img/svg/popular/popular-4.svg" width="107" height="65"
             alt="черный значок - фитнес-браслет с серцем и цифрой 150 на экране">
           Фитнес-браслеты
         </li>
-        <li class="catalog__item">
-          <img src="img/svg/index-catalog/popular-5.svg" width="160" height="160"
+        <li class="popular__item">
+          <img class="popular__image" src="img/svg/popular/popular-5.svg" width="56" height="98"
             alt="черный значок - часы с ремешком и с семью окружностями на экране в виде цветка">
           Умные часы
         </li>
-        <li class="catalog__item">
-          <img src="img/svg/index-catalog/popular-6.svg" width="160" height="160" alt="черный значок - квадрокоптер: вид спереди">
+        <li class="popular__item">
+          <img class="popular__image" src="img/svg/popular/popular-6.svg" width="132" height="69"
+            alt="черный значок - квадрокоптер: вид спереди">
           Квадрокоптеры
         </li>
       </ul>
@@ -199,14 +205,14 @@
     <section class="services slider">
       <h2 class="services__title visually-hidden">Предлагаемые услуги сервиса</h2>
 
-      <div class="slider__navigation">
-        <label class="slider__label" for="delivery">
+      <div class="slider__navigation ">
+        <label class="slider__label  element-interactive" for="delivery">
           <span>Доставка</span>
         </label>
-        <label class="slider__label" for="guarantee">
+        <label class="slider__label  element-interactive" for="guarantee">
           <span>Гарантия</span>
         </label>
-        <label class="slider__label" for="credit">
+        <label class="slider__label  element-interactive" for="credit">
           <span>Кредит</span>
         </label>
       </div>
@@ -216,7 +222,7 @@
         <input class="guarantee switch" type="radio" name="slide-switch" id="guarantee">
         <input class="credit switch" type="radio" name="slide-switch" id="credit">
 
-        <div class="slider__wrapper-text slider__text">
+        <div class="slider__wrapper-text slider-text">
           <h3 class="slider__title">Доставка</h3>
           <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
             заработаем, поднимая его на ваш этаж.</p>
@@ -230,7 +236,8 @@
         </div>
         <div class="slider__wrapper-text">
           <h3 class="slider__title">Кредит</h3>
-          <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия
+          <p class="slider__text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее
+            выгодные условия
             кредита. Выгодные для нашего банка, разумеется.</p>
           <svg></svg>
         </div>
@@ -239,30 +246,32 @@
 
     <section class="logotypes">
       <h2 class="logotypes__title visually-hidden">Логотипы товарных марок</h2>
-      <img src="img/logotypes/logo-Dji.png" width="260" height="100" alt="Dji">
-      <img src="img/logotypes/logo-SPAdgets.png" width="260" height="100" alt="SP Adgets">
-      <img src="img/logotypes/logo-GoPro.png" width="260" height="100" alt="GoPro">
-      <img src="img/logotypes/logo-Vive.png" width="260" height="100" alt="Vive">
+      <img class="logotypes__1" src="img/logotypes/logo-Dji_off.png" width="260" height="100" alt="Dji">
+      <img class="logotypes__2" src="img/logotypes/logo-SPAdgets_off.png" width="260" height="100" alt="SP Adgets">
+      <img class="logotypes__3" src="img/logotypes/logo-GoPro_off.png" width="260" height="100" alt="GoPro">
+      <img class="logotypes__4" src="img/logotypes/logo-Vive_off.png" width="260" height="100" alt="Vive">
     </section>
 
-    <section class="company delivery-name">
-      <h2 class="company__title">О нас</h2>
-      <p class="company__assortment">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
+    <section class="company delivery-name company-contacts">
+      <h2 class="company__title company-contacts__title">О нас</h2>
+      <p class="company__assortment company-contacts__text">Огромный выбор гаджетов не оставит равнодушным гика, который
+        есть в каждом из нас.
       </p>
-      <p class="company__delivery ">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со
+      <p class="company__delivery company-contacts__text">Мы можем доставить ваш товар в самые отдаленные точки России!
+        DEVICE работает со
         многими транспортными компаниями:</p>
       <ul class="delivery-name__list">
         <li class="delivery-name__item">Деловые линии</li>
         <li class="delivery-name__item">Автотрейдинг</li>
         <li class="delivery-name__item">ЖелДорЭкспедиция</li>
       </ul>
-      <a href="#">Подробнее о нас</a>
+      <a href="#" class="element-interactive">Подробнее о нас</a>
     </section>
 
-    <section class="contacts" id="contacts">
-      <h2 class="contacts__title">Контакты</h2>
-      <p class="contacts__text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить
-        работоспособность покупки. Всякое бывает.</p>
+    <section class="contacts company-contacts" id="contacts">
+      <h2 class="contacts__title company-contacts__title">Контакты</h2>
+      <p class="contacts__text company-contacts__text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы
+        сможете проверить работоспособность покупки. Всякое бывает.</p>
       <div class="map">
         <!-- <img src="img/map.png" alt="Карта с адресом: наб. Pеки Карповки, 5 корпус П, Санкт-Петербург, 197022" width="560" height="222"> -->
         <iframe
@@ -270,14 +279,14 @@
           width="960" height="573" style="border:0;" allowfullscreen="" loading="lazy">
         </iframe>
       </div>
-      <button class="contacts__button" type="button">Напишите нам</button>
+      <button class="contacts__button element-interactive" type="button">Напишите нам</button>
     </section>
   </main>
 
   <footer class="footer">
     <nav class="footer-nav">
       <a class="footer__logo">
-        <img src="img/svg/logo-black.svg" width="163" height="35" alt="Логотип интернет-магазина «Девайс»">
+        <img src="img/svg/logo-yellow.svg" width="163" height="35" alt="Логотип интернет-магазина «Девайс»">
       </a>
       <ul class="footer-nav-user">
         <li class="footer-nav-user__item">
@@ -306,7 +315,7 @@
           <a href="#contacts">Контакты</a>
         </li>
         <li class="footer-nav-basic__item">
-          <a href="tel:+78005558628">Тел.: +7 800 555-86-28</a>
+          <a class="footer__tel" href="tel:+78005558628">Тел.: +7 800 555-86-28</a>
         </li>
       </ul>
     </nav>
@@ -344,20 +353,20 @@
 
   <form class="form" action="#" method="post">
     <h2 class="form__title visually-hidden">Форма обратной связи</h2>
-    <label class="form__username" for="user-id">
+    <label class="form__username input-title" for="user-id">
       Ваше имя:
-      <input name="username" id="user-id" type="text" placeholder="Имя Фамилия" required>
+      <input class="input-text" name="username" id="user-id" type="text" placeholder="Имя Фамилия" required>
     </label>
-    <label class="form__email" for="user-email">
+    <label class="form__email input-title" for="user-email">
       Ваш e-mail:
-      <input name="email" id="user-email" type="email" placeholder="email@example.com" required>
+      <input class="input-text" name="email" id="user-email" type="email" placeholder="email@example.com" required>
     </label>
-    <label class="form__text" for="user-text">
+    <label class="form__text input-title" for="user-text">
       Текст письма:
-      <input name="text" id="user-text" type="text" placeholder="В свободной форме" required>
+      <input class="input-text" name="text" id="user-text" type="text" placeholder="В свободной форме" required>
     </label>
-    <button class="form__button" type="submit">Отправить</button>
-    <button class="form__button-cloze" type="button" aria-label="Закрыть окно формы связи"></button>
+    <button class="form__button element-interactive" type="submit">Отправить</button>
+    <button class="form__button-cloze " type="button" aria-label="Закрыть окно формы связи"></button>
   </form>
 
   <script src="js/script.js"></script>
