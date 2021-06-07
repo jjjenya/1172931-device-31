@@ -1,0 +1,51 @@
+/* Global */
+.page__body {
+  align-content: start;
+  text-align: center;
+
+  min-height: 100%;
+  min-width: 720px;
+
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 0 40px 0;
+
+  color: var(--black);
+
+  /* font-family:
+  font-size: px;
+  line-height: px;
+  font-weight: ;
+
+  text-transform: none;
+
+  background-color: #ddd; */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.page a {
+  text-decoration: none;
+}
+
+.page p {
+  margin: 0px;
+}
+
+.page img {
+  height: auto;
+}
+
+.page ul {
+  list-style: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
